@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url('pic-2.jpg') no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.center {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #427209;
+  border-radius: 5px;
+  color: lightgrey;
+  text-align: center;
+  transition: 0.4s;
+  transform: translateZ(200px) rotateX(20deg);
+  overflow: hidden;
+}
+.center:hover {
+  box-shadow: -90px 0 5px -5px #e2dede, -190px 2px 5px -10px #6d2a2a, -290px 4px 5px -15px #846b0a, 90px 0 5px -5px #2f5524, 190px 2px 5px -10px #6e275c, 290px 4px 5px -15px 
+  #8344f6;
+}
+.center h2 {
+  font-size: 0;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 0.4s;
+  transform: translate(-50%,-50%);
+}
+.center:hover h2 {
+  font-size: 25px;
+}
+.hover {
+  transition: 0.4s;
+  text-align: center;
+  line-height: 200px;
+}
+.me {
+  transition: 0.4s;
+}
+.center:hover .hover {
+  margin-left: -340px;
+}
+.center:hover .me {
+  margin-right: ;
+}
+span {
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-weight: 650;
+  font-family: Verdana;
+}
+
